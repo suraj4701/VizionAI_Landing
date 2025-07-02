@@ -27,8 +27,8 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'], // Keep the default list reporter for a summary
-    // ['./customReporter.js'] // Your custom reporter
-    ['html', { open: 'never' }], // Optional: If you also want an HTML report
+    ['./customReporter.js'] // Your custom reporter
+    // ['html', { open: 'never' }], // Optional: If you also want an HTML report
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
