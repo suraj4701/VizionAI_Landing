@@ -16,7 +16,7 @@ test("Home Admin Panel link verify", async ({ page }) => {
 
 test("Home Trustpilot link verify", async ({ page }) => {
     await page.goto(home_url);
-    const trustpilotLinkLocator = page.locator("//body/div[@id='main-container']/main[@id='main']/div[1]/article[1]/div[1]/div[1]/div[1]/div[1]/div[6]/div[1]/div[2]/div[1]");
+    const trustpilotLinkLocator = page.locator("(//a[@href='https://www.trustpilot.com/review/iqonic.design'])[1]");
     await TrustpilotVerify(page, trustpilotLinkLocator);
 })
 
